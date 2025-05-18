@@ -1,26 +1,32 @@
-# Intellects
-INTEL-UNNATI-2024
+# Frontline Futures
 
 ## Introduction
+
 Ollama is an open-source software that serves as a powerful and user-friendly platform for running LLMs on your local machines. It acts as a bridge between the complexities of LLM technology and the desire for an accessible and customizable AI experience.
 At its core, Ollama simplifies the process of downloading, installing, and interacting with a wide range of LLMs, empowering users to explore their capabilities without the need for extensive technical expertise or reliance on cloud-based platforms.Instead of spending hours on downloading and installing the LLM , ollama helps to download and interact with the LLM easily.
 
 ## Key Features and Functionalities
+
 Ollama boasts a comprehensive set of features and functionalities designed to enhance the user experience and maximize the potential of local LLMs.
 
 ## Model Library and Management
+
 Ollama provides access to a diverse and continuously expanding library of pre-trained LLM models, ranging from versatile general-purpose models to specialized ones tailored for specific domains or tasks. Downloading and managing these models is a seamless and streamlined process, eliminating the need to navigate complex model formats or dependencies.
 
 ## Effortless Installation and Setup
+
 One of Ollama’s standout features is its user-friendly installation process. Whether you’re a Windows, macOS, or Linux user, Ollama offers intuitive installation methods tailored to your operating system, ensuring a smooth and hassle-free setup experience.
 
 ## Customization and Fine-tuning
+
 Ollama offers users a wide range of customization options, allowing them to fine-tune LLM parameters, modify settings, and adapt the models’ behavior to meet their specific requirements and preferences. This flexibility enables optimal performance and encourages experimentation with different model configurations.
 
 ## Interactive User Interfaces
+
 While Ollama provides a command-line interface for advanced users, it also offers user-friendly graphical interfaces through seamless integration with popular tools like Open WebUI. These interfaces enhance the overall experience by providing intuitive chat-based interactions, visual model selection, and parameter adjustment capabilities.
 
 ## Offline Access and Privacy
+
 One of the key advantages of running LLMs locally with Ollama is the ability to operate entirely offline, without the need for an internet connection. This not only ensures uninterrupted access and productivity but also addresses privacy concerns by keeping your data securely within your local environment.
 
 # Getting Started with Ollama
@@ -68,6 +74,7 @@ With Ollama installed and your desired LLM model downloaded, you’re ready to d
 ### Command-Line Interface (CLI)
 
 For users who prefer a more traditional and streamlined approach, Ollama offers a robust command-line interface (CLI) that allows you to interact with LLMs directly from your terminal or console.
+
 ## Launching the CLI
 
 To launch the Ollama CLI, follow these steps:
@@ -98,37 +105,42 @@ While the CLI offers a powerful and efficient way to interact with LLMs, some us
 1. Launch Ollama and load the llama3 model:
 
 2. Clone the UI repository from GitHub:
+
 ```bash
 https://github.com/ivanfioravanti/chatbot-ollama.git
 ```
 
 3. Navigate into the cloned repository:
 
-4. Locate the `.env` file in the folder. View its content using: 
+4. Locate the `.env` file in the folder. View its content using:
+
 ```bash
 more .env.local.example
 ```
 
-6. Edit the `.env.local.example` file using the nano text editor: 
+6. Edit the `.env.local.example` file using the nano text editor:
+
 ```bash
 nano .env.local.example
 ```
 
 8. Add the following detail to the `.env.local.example` file:
+
 ```bash
 OLLAMA_HOST=http://0.0.0.0:11434
 ```
 
 7. Install dependencies using npm:
+
 ```bash
 npm ci
 ```
 
 8. Start the development server to launch the web UI:
+
 ```bash
 npm run dev
 ```
-
 
 ## Fine-Tuning the LLM Model
 
@@ -139,19 +151,23 @@ To fine-tune the LLM model, follow these steps:
 2. Add the fin-tuned file `fine-tuned-model`.
 
 3. Create an intellects model using a specified Modelfile:
+
 ```bash
 ollama create intellects -f ./Modelfile
 ```
+
 Replace `./Modelfile` with the path to your actual Modelfile.
 
 5. Place the necessary fine-tuning contents into `modelfile`.
 
 6. Copy the fine-tuned contents to your model:
+
 ```bash
 Copy fine-tuned-model intellects
 ```
 
-8. Run your chatbot using the command: 
+8. Run your chatbot using the command:
+
 ```bash
 ollama run intellects
 ```
